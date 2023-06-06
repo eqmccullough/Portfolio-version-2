@@ -54,6 +54,13 @@ h2 {
   border: white;
   border-style: solid;
 }
+h3 {
+  text-align: left;
+  position: relative;
+}
+h4 {
+  text-align: left;
+}
 
   /* Dealing with Nav list items cutting off screen at this point */
   @media screen and (max-width: 1445px) {

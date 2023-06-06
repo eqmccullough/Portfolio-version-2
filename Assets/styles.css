@@ -1,0 +1,73 @@
+html {
+
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 200px;
+}
+
+body{
+  background-color: aqua;
+}
+
+header{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav{
+  background-color: red;
+  font-size: larger;
+}
+
+ul {
+  width: 100%;
+  display:inline;
+}
+/* Creating IDs for page to scroll to */
+#AboutMe {}
+#Resume{}
+#ContactMe{}
+#navID { 
+  display: inline;
+  position:relative;
+  left: 1000px;
+  margin-right: 10px;
+}
+#Image2 {
+  width: 1000px;
+}
+
+h1 {
+  color: red;
+  text-align: left;
+}
+  
+h2 {
+  text-align: left;
+  width: 260px;
+  position: relative;
+  left:1000px;
+  border: white;
+  border-style: solid;
+}
+
+  /* Dealing with Nav list items cutting off screen at this point */
+  @media screen and (max-width: 1445px) {
+    #navID { 
+      display: inline;
+      position:relative;
+      left: 200px;
+      margin-right: 10px;
+      }
+  }
+
+  /* Stack Work images when screen using handheld device */
+  @media screen and (max-width: 768px) {
+    #Work {
+      flex-direction: column;
+    }
+  }
